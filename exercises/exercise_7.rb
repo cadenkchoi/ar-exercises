@@ -10,3 +10,10 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+puts "Enter a store name"
+@input = gets.chomp
+
+Store.create!(:name => @input)
+
+#Validation failed: Annual revenue is not a number (ActiveRecord::RecordInvalid)
